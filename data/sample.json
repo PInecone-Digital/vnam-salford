@@ -1,0 +1,49 @@
+{
+  "info": [
+    {
+      "name": "",
+      "description": "",
+      "location": "",
+      "locationLink": "",
+      "website": "",
+      "phone": "",
+      "coverImage": "",
+      "logoImage": ""
+    }
+  ],
+  "menu": [
+    {
+      "category": "",
+      "icon": "",
+      "description": "",
+      "items": [
+        {
+          "image": true,
+          "imageUrl": "",
+          "name": "",
+          "description": "",
+          "calories": "",
+          "ingredients": "",
+          "notes": "",
+          "prices": [
+            {
+              "option": "",
+              "price": ""
+            },
+            {
+              "option": "",
+              "price": ""
+            }
+          ],
+          "labels": ["label1", "label2", "label3"],
+          "addition": [
+            {
+              "name": "name",
+              "price": "price"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VNAM Kargo MKT</title>
+    <meta name="theme-color" content="#ebe1d2" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="vendors/bootstrap-5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <img id="cover-image" src="" alt="cover image" loading="lazy" onError="this.onerror=null;this.src='/img/cover-placeholder.jpg';" />
+    </header>
+    <header class="bg-section-secondary">
+      <div class="container">
+        <div class="d-flex flex-row justify-content-between align-items-start pb-3">
+          <img id="logo" class="img-fluid rounded" src="" alt="" width="120" height="120" onError="this.onerror=null;this.src='/img/logo-placeholder.png';" />
+          <div class="d-flex py-2 gap-2">
+            <div class="dropdown">
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="dropdown" aria-expanded="false">...</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.instagram.com/vnam.mcr/" target="_blank">Instagram</a></li>
+              </ul>
+            </div>
+            <a href="https://maps.app.goo.gl/zgQNjqFgWrs4gdGd7" class="btn btn-primary" target="_blank"> Visit Us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="bg-section-secondary">
+      <div class="container">
+        <div id="venue-details">
+          <h2 class="card-title placeholder-glow">
+            <span class="placeholder col-6"></span>
+          </h2>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-6"></span>
+          </p>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-3"></span>
+            <span class="placeholder col-3"></span>
+            <span class="placeholder col-3"></span>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="bg-section-secondary sticky-top border-top border-secondary-subtle">
+      <div class="container">
+        <ul id="menu-nav" class="nav nav-underline flex-row flex-nowrap overflow-scroll gap-4"></ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section id="menu_wrapper" class="mb-5"></section>
+    </div>
+
+    <footer class="bg-section-secondary py-3">
+      <div class="container text-center">
+        <p class="text-accent text-xsmall m-0">Made with love by <a href="https://orderly.cc" target="_blank">Orderly</a></p>
+      </div>
+    </footer>
+
+    <!-- Item Modal -->
+    <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="itemModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img id="modalFoodImage" class="img-fluid" src="" alt="" />
+            <button type="button" class="btn position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close">
+              <img src="/img/icons/close.svg" alt="" width="24" height="24" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="modalFoodTitle" class="food-title mb-1">Food title</p>
+            <p id="modalFoodPrice" class="menu-price mb-1">${item.price}</p>
+            <p id="modalFoodDescription" class="food-details">${item.description}</p>
+            <hr />
+            <p class="text-muted small">Questions about allergens, ingredients or cooking methods? Please contact the restaurant</p>
+            <div class="d-grid">
+              <a href="#" class="btn btn-primary" target="_blank">Order on Deliveroo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="vendors/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
